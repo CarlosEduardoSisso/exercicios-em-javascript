@@ -1,0 +1,26 @@
+<!--
+1. Botão de Mostra/Esconde Texto
+Descrição: Crie uma página com um parágrafo de texto oculto inicialmente. Ao clicar em um botão "Mostrar", o texto deve aparecer, e o botão deve mudar para "Esconder". Ao clicar em "Esconder", o texto deve ser ocultado novamente.
+Dica: Use o atributo display do CSS para controlar a visibilidade.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de Mostra/Esconde Texto</title>
+</head>
+<body>
+    <h1>Texto Oculto</h1>
+    <p id="txt" style="display: none;">
+        <em>
+            "Eu estava escondida, sem ninguém pra me notar,<br>
+            Mas agora revelada, vim pra te ajudar.<br>
+            Se quiser me esconder de novo, é fácil, você vai ver,<br>
+            Basta clicar no botão abaixo e me fazer desaparecer!"
+        </em>
+    </p>
+    <input type="button" value="Mostrar Texto" onclick="esconderRevelar()">
+</body>
+<script src="mostra-esconde-texto.js"></script>
+</html>

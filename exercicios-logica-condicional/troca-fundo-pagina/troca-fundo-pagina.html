@@ -1,0 +1,50 @@
+<!--
+2. Troca de Fundo da Página
+Descrição: Crie uma página com um botão que, ao ser clicado, alterna entre duas cores de fundo diferentes (ex.: branco e azul). Cada clique deve trocar a cor de fundo atual para a outra.
+Dica: Use a propriedade backgroundColor para modificar o estilo do body.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Fundo da Página</title>
+</head>
+<body style="background-color: white;">
+    <h1>Troca de Fundo da Página</h1>
+    <input type="button" value="Troque a cor de fundo desta página" onclick="changeBackgroundColor()">
+</body>
+<script src="troca-fundo-pagina.js"></script>
+</html>
+
+<!--
+Abaixo uma solução melhor que um bot me sugeriu na internet:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Fundo da Página</title>
+    <style>
+        /* Definir as cores como classes */
+        .fundo-branco {
+            background-color: white;
+            color: black;
+        }
+
+        .fundo-azul {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body class="fundo-branco">
+    <h1>Troca de Fundo da Página</h1>
+    <input type="button" value="Troque a cor de fundo desta página" onclick="changeBackgroundColor()">
+</body>
+<script src="troca-fundo-pagina.js"></script>
+</html>
+
+-->
