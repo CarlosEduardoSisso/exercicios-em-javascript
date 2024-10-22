@@ -12,6 +12,5 @@ function calcular() {
     let nome = document.querySelector('input#txtnome');
     let carac = nome.value.length;
     let res = document.querySelector('p#resposta');
-    //res.innerHTML = `${nome}`
     res.innerHTML = `O nome <strong>${nome.value}</strong> tem ${carac} caracteres.`
 }
