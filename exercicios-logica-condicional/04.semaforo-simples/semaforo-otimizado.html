@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Simples</title>
+    <style>
+        div#semaforo {
+            background-color: black;
+            width: 175px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        #semaforo > div {
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .vermelho {
+            background-color: rgba(255, 0, 0, 0.226);
+            width: 100px;
+            height: 100px;
+        }
+
+        .amarelo {
+            background-color: rgba(255, 255, 0, 0.226);
+            width: 100px;
+            height: 100px;
+        }
+
+        .verde {
+            background-color: rgba(0, 128, 0, 0.226);
+            width: 100px;
+            height: 100px;
+        }
+
+        div#botao {
+            display: block;
+            margin: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<h1>4. Semáforo Otimizado</h1>
+    <blockquote><strong>Descrição:</strong> <em>Simule um semáforo com três círculos de cores (vermelho, amarelo e verde). Crie um botão que, ao ser clicado, alterne a luz ativa (vermelho > amarelo > verde > vermelho). A ordem correta das cores é verde, depois amarelo e depois vermelho. A mudança da luz amarela para a luz vermelha é automática: a luz amarela fica acesa por alguns segundos e muda automaticamente para a luz vermelha. Minha ideia foi colocar uma transição entre as duas e, durante o tempo em que a amarelo fica acessa, o botão de "Mude a cor" mudasse o texto para "Aguardando..." e ficasse "inabilitado" para clicar.</em></blockquote>
+    <blockquote><strong>Dica:</strong> <em>Use classes de CSS para modificar a cor do círculo ativo com base no estado atual.</em></blockquote>
+<h2>Minha Solução:</h2>
+<div id="semaforo">
+    <div class="vermelho"></div>
+    <div class="amarelo"></div>
+    <div class="verde"></div>
+</div>
+<div id="botao">
+    <input type="button" value="Mude a cor" onclick="mudaCor()">
+</div>
+</body>
+<script src="semaforo-otimizado.js"></script>
+</html>
