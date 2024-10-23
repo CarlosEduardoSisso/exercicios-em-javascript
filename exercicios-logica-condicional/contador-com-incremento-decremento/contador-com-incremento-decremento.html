@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com Incremento/Decremento</title>
+    <style>
+        .h2-title {
+            text-decoration-line: underline;
+        }
+
+        input#iniciar {
+            padding: 10px;
+            font-size: large;
+            font-weight: 600;
+            width: 200px;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        p#txtnum {
+            text-align: center;
+            font-size: 100px;
+        }
+
+        div#buttons {
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+
+        input#increm-decrem {
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>3. Contador com Incremento/Decremento</h1>
+    <blockquote><strong>Descrição:</strong> <em>Faça uma página com um número centralizado e dois botões: "Incrementar" e "Decrementar". Cada botão deve aumentar ou diminuir o número mostrado. O número deve iniciar em 0.</em></blockquote cite="">
+    <blockquote cite=""><strong>Dica:</strong> <em>Mantenha o valor atual do número em uma variável e modifique o DOM a cada clique.</em></blockquote cite="">
+    <h2 class="h2-title">Minha Solução:</h2>
+    <input type="button" value="Iniciar" id="iniciar" onclick="iniciarContador()">
+    <div id="user-number">
+        <p id="txtnum">0</p> <!-- Valor inicial é 0 -->
+        <div id="buttons">
+            <input type="button" value="Incrementar" id="increm-decrem" onclick="incrementar()">
+            <input type="button" value="Decrementar" id="increm-decrem" onclick="decrementar()">
+        </div>
+    </div>
+</body>
+<script src="contador-com-incremento-decremento.js"></script>
+</html>
